@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+ul {
+  list-style-type: none;
+  color: white;
+  background: linear-gradient(to left, black, grey);
+  height: 50px;
+  position: sticky;
+  top: 0;
+}
+.HireMeright {
+  float: right;
+  padding: 16px 24px;
+  margin-right: 32px;
+  color: aqua;
+}
+li {
+  float: left;
+  padding: 16px 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li:hover {
+  border-bottom: solid Dodgerblue 2px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropDownContainer {
+  display: none;
+  position: absolute;
+  margin-top: 22px;
+  color: white;
+  background: Dodgerblue;
+  width: 200px;
+  border-radius: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li:hover .dropDownContainer {
+  display: block;
+}
+.content {
+  padding: 12px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.content:hover {
+  background: linear-gradient(to left, grey, black);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dropIcon {
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.emailContainer:hover .emailDropDown {
+  display: block;
+}
+
+.emailDropDown {
+  display: none;
+  position: absolute;
+  background: Dodgerblue;
+  border-radius: 5px;
+  color: white;
+  margin-left: 190px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 672px) {
+  ul {
+    color: white;
+    height: 340px;
   }
-  to {
-    transform: rotate(360deg);
+  li {
+    float: none;
+  }
+  .HireMeright {
+    float: none;
   }
 }
