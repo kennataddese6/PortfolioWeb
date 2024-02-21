@@ -34,6 +34,8 @@ li:hover {
   background: Dodgerblue;
   width: 200px;
   border-radius: 8px;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.3),
+    0 12px 26px 0 rgba(0, 0, 0, 0.29);
 }
 li:hover .dropDownContainer {
   display: block;
@@ -65,7 +67,7 @@ li:hover .dropDownContainer {
   padding: 8px;
 }
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 678px) {
   ul {
     color: white;
     height: 340px;
