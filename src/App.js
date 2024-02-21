@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { FaAngleRight } from "react-icons/fa";
 function App() {
   return (
     <>
@@ -15,7 +15,10 @@ function App() {
             <div class="content emailContainer">
               {" "}
               Email
-              <div> </div>
+              <div>
+                {" "}
+                <FaAngleRight />{" "}
+              </div>
               <div class="emailDropDown"> kennataddese6@gmail.com </div>
             </div>
             <div class="content"> Address </div>
