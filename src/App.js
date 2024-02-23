@@ -1,5 +1,6 @@
 import "./App.css";
 import { FaAngleRight } from "react-icons/fa";
+import imageOne from "../src/Assets/ImageOne.jpeg";
 function App() {
   return (
     <>
@@ -33,46 +34,13 @@ function App() {
           <> Hire Me </>{" "}
         </li>
       </ul>
-      <h1> Hello my name is kenna 1</h1>
-      <h1> Hello my name is kenna 2</h1>
-      <h1> Hello my name is kenna 3</h1>
-      <h1> Hello my name is kenna 4 </h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
-      <h1> Hello my name is kenna</h1>
+      <h1> Hello</h1>
+      <div className="gallery">
+        <div className="descriptionContainer"> Hello</div>
+      </div>
+      <div className="gallery">
+        <img src={imageOne} className="LandingPageImage" />
+      </div>
     </>
   );
 }

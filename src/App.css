@@ -67,6 +67,25 @@ li:hover .dropDownContainer {
   padding: 8px;
 }
 
+.gallery {
+  float: left;
+  width: 46.875%;
+  margin: 12px;
+  background-color: dodgerblue;
+}
+.LandingPageImage {
+  width: 100%;
+  height: auto;
+}
+.descriptionContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 678px) {
   ul {
     color: white;
