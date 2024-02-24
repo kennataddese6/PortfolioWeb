@@ -2,7 +2,23 @@
   margin: 0;
   /* padding: 0; */
 }
+.menuContainer {
+  display: none;
+  position: sticky;
+  float: right;
+  margin: 16px;
+  z-index: 1;
+}
+
+.menulist {
+  background-color: dodgerblue;
+  width: 20px;
+  height: 3px;
+  margin: 2px;
+  cursor: pointer;
+}
 ul {
+  display: block;
   list-style-type: none;
   color: white;
   background: linear-gradient(to left, black, grey);
@@ -71,25 +87,67 @@ li:hover .dropDownContainer {
   float: left;
   width: 46.875%;
   margin: 12px;
-  background-color: dodgerblue;
 }
 .LandingPageImage {
   width: 100%;
   height: auto;
+  cursor: all-scroll;
 }
 .descriptionContainer {
-  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
-
+.IntroductionName {
+  margin-top: 26vh;
+  font-size: 64px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.IntroductionCareer {
+  margin-top: 24px;
+}
+.learnMoreButton {
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.learnMoreButton:hover {
+  background-color: black;
+}
 @media screen and (max-width: 767px) {
+  ul {
+    display: none;
+  }
+  .showNavbar {
+    display: block;
+  }
+  .menuContainer {
+    display: block;
+  }
   .gallery {
     width: 100%;
   }
+  .IntroductionName {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 678px) {
+  @keyframes slideDown {
+    from {
+      height: 0;
+    }
+    to {
+      max-height: 340px;
+    }
+  }
   ul {
     color: white;
     height: 340px;
+    animation: slideDown 0.15s;
   }
   li {
     float: none;
