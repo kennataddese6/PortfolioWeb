@@ -1,6 +1,5 @@
 import "./App.css";
 import { FaAngleRight } from "react-icons/fa";
-import imageOne from "../src/Assets/ImageOne.jpeg";
 import { useState } from "react";
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
