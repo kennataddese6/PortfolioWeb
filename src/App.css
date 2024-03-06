@@ -1,6 +1,7 @@
 * {
   margin: 0;
   /* padding: 0; */
+  box-sizing: border-box;
 }
 .menuContainer {
   display: none;
@@ -82,28 +83,31 @@ li:hover .dropDownContainer {
   margin-left: 190px;
   padding: 8px;
 }
-
-.gallery {
-  float: left;
-  width: 46.875%;
-  margin: 12px 0;
+.LandingpageFirstContainer {
+  width: 98%;
+  margin: 8px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.LandingPageImage {
-  width: 100%;
-  height: auto;
-  cursor: all-scroll;
+.description {
+  display: flex;
+  align-items: center;
 }
-.descriptionContainer {
+.desciptionholder {
   text-align: center;
+  width: 100%;
+  padding: 16px;
 }
-.IntroductionName {
-  margin-top: 26vh;
-  font-size: 64px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
+.desciptiontext {
+  margin: 16px;
 }
-.IntroductionCareer {
-  margin-top: 24px;
+.imageContainer {
+  background-image: url("/src/Assets/ImageOne.jpeg");
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  height: 700px;
 }
 .learnMoreButton {
   width: 120px;
@@ -116,11 +120,24 @@ li:hover .dropDownContainer {
   background: linear-gradient(to left, Dodgerblue 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .learnMoreButton:hover {
   background-position: left bottom;
 }
+.row {
+  margin: 32px 36px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  width: 100%;
+  margin-bottom: 2px;
+}
+
 @media screen and (max-width: 767px) {
   ul {
     display: none;
@@ -177,5 +194,203 @@ li:hover .dropDownContainer {
   }
   .HireMeright {
     float: none;
+  }
+}
+
+/* This is media query for all devices */
+
+@media only screen and (max-width: 600px) {
+  /* This is for extra small  devices */
+  .col-xs-1 {
+    width: 8.33%;
+  }
+  .col-xs-2 {
+    width: 16.66%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.33%;
+  }
+  .col-xs-5 {
+    width: 41.66%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.33%;
+  }
+  .col-xs-8 {
+    width: 66.66%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.33%;
+  }
+  .col-xs-11 {
+    width: 91.66%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* This is for  small devices*/
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* This is for medium devices */
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* This is for large  devices */
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* This is for  extra large devices */
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
   }
 }

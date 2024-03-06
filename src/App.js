@@ -51,15 +51,16 @@ function App() {
         </li>
       </ul>
       <h6>.</h6>
-      <div className="gallery">
-        <div className="descriptionContainer">
-          <h1 className="IntroductionName">Hi. This is kenna.</h1>
-          <h1 className="IntroductionCareer">I am a software developer.</h1>
-          <button className="learnMoreButton">Learn More</button>
+      <div className="LandingpageFirstContainer">
+        <div className="description col-s-6">
+          {" "}
+          <div className="desciptionholder">
+            <h1 className="desciptiontext">Hi, My name is Kenna.</h1>
+            <h2 className="desciptiontext">I am a Frontend Developer.</h2>
+            <button className="learnMoreButton">Learn More</button>
+          </div>
         </div>
-      </div>
-      <div className="gallery">
-        <img src={imageOne} className="LandingPageImage" />
+        <div className="imageContainer col-s-6"> </div>
       </div>
     </>
   );
