@@ -3,6 +3,7 @@ import { FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [hoveredout, setHoveredout] = useState(false);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
@@ -56,7 +57,19 @@ function App() {
           <div className="desciptionholder">
             <h1 className="desciptiontext">Hi, My name is Kenna.</h1>
             <h2 className="desciptiontext">I am a Frontend Developer.</h2>
-            <button className="learnMoreButton">Learn More</button>
+            <button
+              className={hoveredout ? "learnMoreButtonOut" : "learnMoreButton"}
+              onMouseOut={() => {
+                setHoveredout(true);
+                console.log("I a hovered out");
+              }}
+              onMouseOver={() => {
+                console.log("I am hovered in");
+                setHoveredout(false);
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
         <div className="imageContainer col-s-6"> </div>
