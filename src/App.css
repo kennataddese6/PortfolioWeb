@@ -107,9 +107,40 @@ li:hover .dropDownContainer {
   background-size: cover;
   background-position: 50% 40%;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 750px;
   cursor: crosshair;
-  animation: poundingEffect 0.7s linear 1.5s 1 alternate both;
+  animation: poundingEffect 0.7s linear 1.5s 1 alternate backwards;
+}
+.secondImageContainerInVisble {
+  background-image: url("/src/Assets/ImageThree.jpeg");
+  background-size: cover;
+  background-position: 100% -700%;
+  background-repeat: no-repeat;
+  height: 750px;
+  cursor: crosshair;
+}
+.secondImageContainer {
+  background-image: url("/src/Assets/ImageThree.jpeg");
+  background-size: cover;
+  background-position: 100% -900%;
+  background-repeat: no-repeat;
+  height: 750px;
+  cursor: crosshair;
+  animation: slideIn 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    background-position: 50% -700%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 50% 0%;
+    opacity: 1;
+  }
 }
 @keyframes poundingEffect {
   0% {
