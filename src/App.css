@@ -108,6 +108,7 @@ li:hover .dropDownContainer {
   background-position: 50% 40%;
   background-repeat: no-repeat;
   height: 700px;
+  cursor: crosshair;
 }
 .learnMoreButton {
   width: 120px;
