@@ -1,12 +1,42 @@
 import "./App.css";
 import { FaAngleRight } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 function App() {
   const [showNavbar, setShowNavbar] = useState(false);
   const [hoveredout, setHoveredout] = useState(false);
+  const [visible, setIsVisible] = useState(false);
+  const cardRef = useRef();
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  const checkVisibility = () => {
+    const cardElement = cardRef.current;
+    if (!cardElement) return;
+
+    const cardRect = cardElement.getBoundingClientRect();
+    const cardTop = cardRect.top;
+    const cardBottom = cardRect.bottom;
+    const viewportHeight = window.innerHeight;
+
+    // Check if the top of the card is below the top of the viewport
+    // and if the bottom of the card is above the bottom of the viewport
+    console.log(cardTop, cardBottom, viewportHeight);
+    console.log(visible);
+    console.log(cardTop < viewportHeight && cardBottom >= 0);
+    setIsVisible(cardTop < viewportHeight && cardBottom >= 0);
+  };
+  useEffect(() => {
+    // Check visibility when component mounts
+    checkVisibility();
+
+    // Add scroll event listener
+    window.addEventListener("scroll", checkVisibility);
+
+    // Clean up by removing event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", checkVisibility);
+    };
+  }, []); // Empty dependency array to run effect only once on mount
 
   return (
     <>
@@ -71,6 +101,16 @@ function App() {
           </div>
         </div>
         <div className="imageContainer col-s-6"> </div>
+      </div>
+      <div className="LandingpageFirstContainer">
+        <div
+          className={
+            !visible
+              ? "secondImageContainerInVisble col-s-6"
+              : "secondImageContainer col-s-6"
+          }
+          ref={cardRef}
+        ></div>
       </div>
     </>
   );
