@@ -109,6 +109,24 @@ li:hover .dropDownContainer {
   background-repeat: no-repeat;
   height: 700px;
   cursor: crosshair;
+  animation: poundingEffect 0.7s linear 1.5s 1 alternate both;
+}
+@keyframes poundingEffect {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .learnMoreButton {
   width: 120px;
