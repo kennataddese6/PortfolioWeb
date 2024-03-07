@@ -61,10 +61,8 @@ function App() {
               className={hoveredout ? "learnMoreButtonOut" : "learnMoreButton"}
               onMouseOut={() => {
                 setHoveredout(true);
-                console.log("I a hovered out");
               }}
               onMouseOver={() => {
-                console.log("I am hovered in");
                 setHoveredout(false);
               }}
             >
