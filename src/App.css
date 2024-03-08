@@ -115,7 +115,7 @@ li:hover .dropDownContainer {
   background-repeat: no-repeat;
   height: 750px;
   cursor: crosshair;
-  animation: poundingEffect 0.7s linear 1.5s 1 alternate backwards;
+  animation: poundingEffect 0.7s linear 0.5s 1 alternate backwards;
   position: relative;
   z-index: -1;
 }
