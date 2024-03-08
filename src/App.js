@@ -110,38 +110,77 @@ function App() {
         <div className="description col-s-6">
           <div className="skillSetdesciptionholder">
             <h1 className="skillsHeader"> Skills </h1>{" "}
-            <div className="SkillSetsHolder col-s-6 ">
-              <label> HTML</label>
-              <div className="skillsetProgress progressHtml"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6 ">
-              <label> CSS</label>
-              <div className="skillsetProgress progressCSS"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> JavaScript</label>
-              <div className="skillsetProgress progressJavaScript"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> React</label>
-              <div className="skillsetProgress progressReact"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> Redux</label>
-              <div className="skillsetProgress progressRedux"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> Express</label>
-              <div className="skillsetProgress progressExpress"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> Node Js</label>
-              <div className="skillsetProgress progressNodeJs"> </div>
-            </div>
-            <div className="SkillSetsHolder col-s-6">
-              <label> Mongodb</label>
-              <div className="skillsetProgress progressMongodb"> </div>
-            </div>
+            {visible ? (
+              <>
+                <div className="SkillSetsHolder col-s-6 ">
+                  <label> HTML</label>
+                  <div className="skillsetProgress progressHtml"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6 ">
+                  <label> CSS</label>
+                  <div className="skillsetProgress progressCSS"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> JavaScript</label>
+                  <div className="skillsetProgress progressJavaScript"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> React</label>
+                  <div className="skillsetProgress progressReact"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Redux</label>
+                  <div className="skillsetProgress progressRedux"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Express</label>
+                  <div className="skillsetProgress progressExpress"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Node Js</label>
+                  <div className="skillsetProgress progressNodeJs"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Mongodb</label>
+                  <div className="skillsetProgress progressMongodb"> </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="SkillSetsHolder col-s-6 ">
+                  <label> HTML</label>
+                  <div className="skillsetProgress"> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6 ">
+                  <label> CSS</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> JavaScript</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> React</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Redux</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Express</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Node Js</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+                <div className="SkillSetsHolder col-s-6">
+                  <label> Mongodb</label>
+                  <div className="skillsetProgress "> </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
