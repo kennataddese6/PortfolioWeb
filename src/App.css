@@ -99,6 +99,12 @@ li:hover .dropDownContainer {
   width: 100%;
   padding: 16px;
 }
+.skillSetdesciptionholder {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 16px;
+}
 .desciptiontext {
   margin: 16px;
 }
@@ -131,7 +137,127 @@ li:hover .dropDownContainer {
   animation-delay: 0.5s;
   opacity: 0;
 }
-
+.SkillSetsHolder {
+  width: 100%;
+  float: left;
+  padding: 12px;
+}
+.skillsHeader {
+  margin: 12px 0;
+}
+.skillsetProgress {
+  width: 90%;
+  height: 9px;
+  border-radius: 4px;
+  background: linear-gradient(to left, lightgrey 50%, Dodgerblue 50%);
+  background-size: 200% 100%;
+  background-position: 200% bottom;
+  margin: 6px;
+}
+.progressHtml {
+  animation: progressHtml 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.progressCSS {
+  animation: progressCSS 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.progressJavaScript {
+  animation: progressJavaScript 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.2s;
+}
+.progressReact {
+  animation: progressReact 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.2s;
+}
+.progressRedux {
+  animation: progressRedux 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.4s;
+}
+.progressExpress {
+  animation: progressExpress 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.4s;
+}
+.progressNodeJs {
+  animation: progressNodeJs 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.6s;
+}
+.progressMongodb {
+  animation: progressMongodb 1s linear;
+  animation-fill-mode: both;
+  animation-delay: 1.6s;
+}
+@keyframes progressHtml {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 10% bottom;
+  }
+}
+@keyframes progressCSS {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 20% bottom;
+  }
+}
+@keyframes progressJavaScript {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 30% bottom;
+  }
+}
+@keyframes progressReact {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 5% bottom;
+  }
+}
+@keyframes progressRedux {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 2% bottom;
+  }
+}
+@keyframes progressExpress {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 10% bottom;
+  }
+}
+@keyframes progressNodeJs {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 30% bottom;
+  }
+}
+@keyframes progressMongodb {
+  0% {
+    background-position: 100% bottom;
+  }
+  100% {
+    background-position: 20% bottom;
+  }
+}
 @keyframes slideIn {
   0% {
     background-position: 50% -700%;
