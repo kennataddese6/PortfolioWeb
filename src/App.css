@@ -132,9 +132,9 @@ li:hover .dropDownContainer {
   background-repeat: no-repeat;
   height: 750px;
   cursor: crosshair;
-  animation: slideIn 0.5s linear;
+  animation: slideIn 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   opacity: 0;
 }
 .SkillSetsHolder {
