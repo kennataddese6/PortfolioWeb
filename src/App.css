@@ -89,7 +89,6 @@ li:hover .dropDownContainer {
   padding: 12px;
   display: flex;
   flex-wrap: wrap;
-  cursor: crosshair;
 }
 .description {
   display: flex;
@@ -196,6 +195,23 @@ li:hover .dropDownContainer {
   animation: progressMongodb 1s linear;
   animation-fill-mode: both;
   animation-delay: 1.6s;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid;
+  border-color: dodgerblue transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite ease-out;
+  margin: auto;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes progressHtml {
   0% {
