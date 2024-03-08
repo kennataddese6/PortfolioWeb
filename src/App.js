@@ -19,7 +19,7 @@ function App() {
     const viewportHeight = window.innerHeight;
     // Check if the top of the card is below the top of the viewport
     // and if the bottom of the card is above the bottom of the viewport
-    setIsVisible(cardTop < viewportHeight && cardBottom >= 0);
+    setIsVisible(cardTop + 100 < viewportHeight && cardBottom >= 0);
   };
   useEffect(() => {
     // Check visibility when component mounts
