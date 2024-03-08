@@ -116,8 +116,6 @@ li:hover .dropDownContainer {
   height: 750px;
   cursor: crosshair;
   animation: poundingEffect 0.7s linear 0.5s 1 alternate backwards;
-  position: relative;
-  z-index: -1;
 }
 .secondImageContainerInVisble {
   background-image: url("/src/Assets/ImageThree.jpeg");
@@ -289,18 +287,28 @@ li:hover .dropDownContainer {
 }
 @keyframes poundingEffect {
   0% {
+    position: relative;
+    z-index: -1;
     transform: scale(1);
   }
   25% {
+    position: relative;
+    z-index: -1;
     transform: scale(1.04);
   }
   50% {
+    position: relative;
+    z-index: -1;
     transform: scale(1);
   }
   75% {
+    position: relative;
+    z-index: -1;
     transform: scale(1.04);
   }
   100% {
+    position: relative;
+    z-index: -1;
     transform: scale(1);
   }
 }
