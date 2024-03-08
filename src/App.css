@@ -116,6 +116,8 @@ li:hover .dropDownContainer {
   height: 750px;
   cursor: crosshair;
   animation: poundingEffect 0.7s linear 1.5s 1 alternate backwards;
+  position: relative;
+  z-index: -1;
 }
 .secondImageContainerInVisble {
   background-image: url("/src/Assets/ImageThree.jpeg");
