@@ -136,6 +136,8 @@ li:hover .dropDownContainer {
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
   opacity: 0;
+  position: relative;
+  z-index: -1;
 }
 .SkillSetsHolder {
   width: 100%;
