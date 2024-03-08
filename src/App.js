@@ -184,7 +184,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="LandingpageFirstContainer"> </div>
+      <div className="LandingpageFirstContainer">
+        <div className="spinner"> </div>
+        <h3 className="desciptionholder">Development is Progress.</h3>
+      </div>
     </>
   );
 }
